@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+.contents {
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+  .sidebar {
+    height: 100vh;
+    width: 300px;
+    background-color: #253141;
+    &__head {
+      background-color: #253141;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__users {
+        height: 20px;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 20px;
+        color: white;
+        &-user {
+          font-size: 16px;
+        }   
+        &-icon {
+          width: 60px;
+          display: flex;
+          &__1 {
+            margin: 0 0 0 auto;
+            padding-right: 5px;
+            a {
+            color: white;
+            }
+          }
+          &__2{
+            a{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &__body {
+      background-color: #2f3e51;
+      height: calc(100vh - 100px);
+      &__texts {
+        padding: 20px 20px 40px;
+        color: white;
+        &-1 {
+          padding-bottom: 5px;
+          font-size: 15px;
+        }
+        &-2 {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .mainbar {
+    height: 100vh;
+    width: calc(100vw - 300px);
+    background-color: white;
+    &__head {
+      background-color: white;
+      height: 100px;
+      &__texts {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        &-1 {
+          color: #333333;
+          font-size: 20px;
+          padding: 35px 0 15px;
+          &--members {
+            font-size: 12px;
+            display: flex;
+            color: #999999;
+            &_title {
+              margin-right: 3px;
+            }
+          }
+        }
+        &-2 {
+          margin-top: 28px;
+          width: 72px;
+          height: 40px;
+          text-align: center;
+          color: #38aef0;
+          font-size: 16px;
+          border: 1px solid;
+          line-height: 40px;
+        }
+      }
+    }
+    &__body {
+      height: calc(100vh - 190px);
+      background-color: #fafafa;
+      &__posts {
+        margin-left: 40px;
+        &--post {
+          &-1{
+            &--p1 {
+              padding: 46px 0 10px;
+              display: flex;
+              text-align: center;
+              &-name1 {
+                font-size: 16px;
+                line-height: 24px;
+                color: #333333;
+                padding-right: 10px;
+              }
+              &-date1 {
+                font-size: 12px;
+                color: #999999;
+              }
+            }
+            &--p2 {
+              font-size: 14px;
+              color: #434a54;
+            }
+          }
+          &-2{
+            &--p3 {
+              padding: 46px 0 10px;
+              display: flex;
+              text-align: center;
+              &-name2 {
+                font-size: 16px;
+                line-height: 24px;
+                color: #333333;
+                padding-right: 10px;
+              }
+              &-date2 {
+                font-size: 12px;
+                color: #999999;
+              }
+            }
+            &--p4 {
+              font-size: 14px;
+              color: #434a54;
+            }
+          }
+          &-3{
+            &--p5 {
+              padding: 46px 0 10px;
+              display: flex;
+              text-align: center;
+              &-name3 {
+                font-size: 16px;
+                line-height: 24px;
+                color: #333333;
+                padding-right: 10px;
+              }
+              &-date3 {
+                font-size: 12px;
+                color: #999999;
+              }
+            }
+            &--p6 {
+              font-size: 14px;
+              color: #434a54;
+            }
+          }
+        }
+      }
+    }
+    &__foot {
+      height: 90px;
+      background-color: #d2d2d2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      &__form {
+        width: calc(100vw - 195px);
+        background-color: white;
+        padding: 0 10px;
+        height: 50px;
+        font-size: 12px;
+        line-height: 50px;
+        
+        margin-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        &-text {
+          color: #999999;
+        }
+        &-images {
+          position: relative;
+          padding-right: 10px;
+            &-input {
+              position: absolute;
+            }
+            #filesend {
+              display: none;
+            }
+        }
+        
+      }
+      &__send {
+        width: 100px;
+        height: 50px;
+        background-color: #38aef0;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+      }
+    }
+  }
+}
