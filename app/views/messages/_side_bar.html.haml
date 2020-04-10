@@ -1,0 +1,28 @@
+.sidebar
+  .sidebar__head
+    .sidebar__head__users
+      %p.sidebar__head__users-user
+        = current_user.name
+      %ul.sidebar__head__users-icon
+        %li.sidebar__head__users-icon__1
+          = link_to  do
+            =icon("fas", "pen-square", class: "icon")
+        %li.sidebar__head__users-icon__2
+          = link_to edit_user_path(current_user) do
+            = icon("fas", "cog", class: "icon")
+  .sidebar__body
+    .sidebar__body__texts
+      %h.sidebar__body__texts-1
+        グループ名
+      %p.sidebar__body__texts-2
+        新着メッセージ
+    .sidebar__body__texts
+      %h.sidebar__body__texts-1
+        グループ名
+      %p.sidebar__body__texts-2
+        新着メッセージ
+    .sidebar__body__texts
+      %h.sidebar__body__texts-1
+        グループ名
+      %p.sidebar__body__texts-2
+        新着メッセージ
