@@ -1,73 +1,8 @@
-.wrapper
-  = render "messages/side_bar"
-
 .contents
-  .sidebar
-    .sidebar__head
-      .sidebar__head__users
-        %p.sidebar__head__users-user
-          kinjyo
-        %ul.sidebar__head__users-icon
-          %li.sidebar__head__users-icon__1
-            = link_to '#', class: "sidebar__head--btn" do
-              = icon("far", "edit")
-              %span<>
-          %li.sidebar__head__users-icon__2
-            =link_to "#", class: "sidebar__head--btn" do
-              = icon("fas", "cog")
-    .sidebar__body
-      .sidebar__body__texts
-        %h.sidebar__body__texts-1
-          techchamp
-        %p.sidebar__body__texts-2
-          メッセージはまだありません。
-  .mainbar
-    .mainbar__head
-      .mainbar__head__texts
-        %h.mainbar__head__texts-1
-          test
-          %ul.mainbar__head__texts-1--members
-            %li.mainbar__head__texts-1--members_title
-              Member :
-            %li.mainbar__head__texts-1--members_member
-              kinjyo
-        %h.mainbar__head__texts-2
-          Edit
-          = link_to "#" 
-    .mainbar__body
-      .mainbar__body__posts
-        %ul.mainbar__body__posts--post
-          %ls.mainbar__body__posts--post-1
-            .mainbar__body__posts--post-1--p1
-              .mainbar__body__posts--post-1--p1-name1
-                kinjyo
-              .mainbar__body__posts--post-1--p1-date
-                2020 0526 0000
-            .mainbar__body__posts--post-1--p2
-              good
-          %ls.mainbar__body__posts--post-2
-            .mainbar__body__posts--post-2--p3
-              .mainbar__body__posts--post-2--p3-name2
-                higa
-              .mainbar__body__posts--post-2--p3-date
-                2020 0731 0000
-            .mainbar__body__posts--post-2--p4
-              bad
-          %ls.mainbar__body__posts--post-3
-            .mainbar__body__posts--post-3--p5
-              .mainbar__body__posts--post-3--p5-name3
-                tamaki
-              .mainbar__body__posts--post-3--p5-date
-                2020 0901 0000
-            .mainbar__body__posts--post-3--p6
-              soso
-    .mainbar__foot
-      .mainbar__foot__form
-        .mainbar__foot__form-text
-          type a message
-        .mainbar__foot__form-images
-          %label{class: "mainbar__foot__form-images--image"}
-            = icon('fas', 'image')  
-            %input{type: "file", id: "filesend"}
-      .mainbar__foot__send
-        Send
+  = render "side_bar"
+  = render "main_chat"
+
+
+
+
+
